@@ -19,8 +19,16 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <ul className="flex flex-col gap-2 my-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
               <li className="block p-1 font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
-                {/* <a
-                  href="#"
+                <a
+                  href="#home"
+                  className="flex items-center transition-colors hover:text-blue-500"
+                >
+                  Home
+                </a>
+              </li>
+              <li className="block p-1 font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
+                <a
+                  href="#productos"
                   className="flex items-center transition-colors hover:text-blue-500"
                 >
                   Productos
@@ -28,15 +36,7 @@ const Navbar = () => {
               </li>
               <li className="block p-1 font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
                 <a
-                  href="#"
-                  className="flex items-center transition-colors hover:text-blue-500"
-                >
-                  Carrito
-                </a> */}
-              </li>
-              <li className="block p-1 font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
-                <a
-                  href="#"
+                  href="#contacto"
                   className="flex items-center transition-colors hover:text-blue-500"
                 >
                   Contacto
@@ -79,9 +79,25 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="lg:hidden">
             <ul className="flex flex-col gap-2 my-2">
+            <li className="block p-1 font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
+                <a
+                  href="#home"
+                  className="flex items-center transition-colors hover:text-blue-500"
+                >
+                  Home
+                </a>
+              </li>
               <li className="block p-1 font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
                 <a
-                  href="#"
+                  href="#productos"
+                  className="flex items-center transition-colors hover:text-blue-500"
+                >
+                  Productos
+                </a>
+              </li>
+              <li className="block p-1 font-sans text-sm antialiased font-medium leading-normal text-blue-gray-900">
+                <a
+                  href="#contacto"
                   className="flex items-center transition-colors hover:text-blue-500"
                 >
                   Contacto
